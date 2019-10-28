@@ -15,7 +15,7 @@ namespace GCalc
     {
 
 
-        System.Windows.Forms.DataVisualization.Charting.Chart newChart;
+        Chart newChart;
 
         public Form1()
         {
@@ -41,33 +41,32 @@ namespace GCalc
             newChart.Series["XY"].Color = Color.Red;
             newChart.Series["XY"].ChartType = SeriesChartType.Line;
             int pIdx = 0;
-            while (pIdx < 100)
+            while (pIdx < y.Length-1)
             {
-               
-                    newChart.Series["XY"].Points.AddXY(pIdx, y[pIdx]);
-                
+
+                newChart.Series["XY"].Points.AddXY(pIdx,y[pIdx]);
+
                 pIdx++;
             }
             newChart.Show();
 
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            ((System.ComponentModel.ISupportInitialize)(this.newChart)).BeginInit();
+            this.components = new Container();
+            ChartArea chartArea1 = new ChartArea();
+            ((ISupportInitialize)(this.newChart)).BeginInit();
 
 
             this.newChart.Dock = DockStyle.Fill;
-            this.newChart.Location = new System.Drawing.Point(0, 110);
+            this.newChart.Location = new Point(0, 50);
 
 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 500);
+            this.AutoScaleDimensions = new SizeF(15F, 15F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(500, 500);
             this.Controls.Add(this.newChart);
             this.Name = "Form1";
             this.Text = "FakeChart";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.newChart)).EndInit();
+            this.Load += new EventHandler(this.Form1_Load);
+            ((ISupportInitialize)(this.newChart)).EndInit();
             this.ResumeLayout(false);
 
             this.Focus();
@@ -77,8 +76,10 @@ namespace GCalc
         {
             Chart dChart = new Chart();
             ChartArea ca = new ChartArea();
+            ca.AxisX = new Axis();
+            ca.AxisX.IsStartedFromZero = true;
             dChart.Height = 300;
-            dChart.Width = 300;
+            dChart.Width = 100;
             dChart.ChartAreas.Add(ca);
 
 
@@ -91,10 +92,10 @@ namespace GCalc
 
             double[] ranNum = new double[100];
 
-            for (int cnt = 0; cnt < 100; cnt++)
+            for (int cnt = 0; cnt < 50; cnt++)
             {
 
-                double num = rand.Next(1, 100)+2;
+                double num = rand.Next(0, 100) + 2;
                 ranNum.SetValue(num, cnt);
             }
 
