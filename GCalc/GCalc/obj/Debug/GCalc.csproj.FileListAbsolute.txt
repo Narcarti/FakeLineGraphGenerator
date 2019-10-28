@@ -1,0 +1,9 @@
+C:\Users\Onshore.DESKTOP-F079G9A\source\repos\GCalc\GCalc\bin\Debug\GCalc.exe.config
+C:\Users\Onshore.DESKTOP-F079G9A\source\repos\GCalc\GCalc\bin\Debug\GCalc.exe
+C:\Users\Onshore.DESKTOP-F079G9A\source\repos\GCalc\GCalc\bin\Debug\GCalc.pdb
+C:\Users\Onshore.DESKTOP-F079G9A\source\repos\GCalc\GCalc\obj\Debug\GCalc.csprojAssemblyReference.cache
+C:\Users\Onshore.DESKTOP-F079G9A\source\repos\GCalc\GCalc\obj\Debug\GCalc.Properties.Resources.resources
+C:\Users\Onshore.DESKTOP-F079G9A\source\repos\GCalc\GCalc\obj\Debug\GCalc.csproj.GenerateResource.cache
+C:\Users\Onshore.DESKTOP-F079G9A\source\repos\GCalc\GCalc\obj\Debug\GCalc.csproj.CoreCompileInputs.cache
+C:\Users\Onshore.DESKTOP-F079G9A\source\repos\GCalc\GCalc\obj\Debug\GCalc.exe
+C:\Users\Onshore.DESKTOP-F079G9A\source\repos\GCalc\GCalc\obj\Debug\GCalc.pdb
